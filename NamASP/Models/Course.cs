@@ -15,7 +15,7 @@ namespace NamASP.Models
         public string LecturerId { get; set; }
         [Required]
         [StringLength(225)]
-        public string Place { get; set }
+        public string Place { get; set; }
         public DateTime DateTime { get; set; }
         public Category Category { get; set; }
         [Required]
