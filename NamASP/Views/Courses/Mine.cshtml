@@ -30,7 +30,7 @@
 
                 <div class="action">
                     <a href="@Url.Action("Edit","Courses", new { id = course.Id })">Edit</a> |
-                    <a data-course-id="@course.Id" href="#" class="js-cancel-course">Delete</a>
+                    <a href="#" class="js-cancel-course" data-course-id="@course.Id">Delete</a>
                 </div>
             </li>
         }
@@ -40,7 +40,7 @@
 
 @section scripts{
     <script>
-        $(function () {
+        $(document).ready(function () {
             $('.js-cancel-course').click(function (e) {
                 e.preventDefault();
                 var link = $(e.target);
@@ -57,6 +57,6 @@
                     });
                 });
             });
-        })
+        });
     </script>
 }
