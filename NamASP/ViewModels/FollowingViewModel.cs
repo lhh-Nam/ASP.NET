@@ -1,15 +1,14 @@
-﻿using NamASP.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using NamASP.Models;
 
 namespace NamASP.ViewModels
 {
-    public class CoursesViewModel
+    public class FollowingViewModel
     {
-        public IEnumerable<Course> UpcomingCourses { get; set; }
-
+        public IEnumerable<ApplicationUser> Followings { get; set; }
         public bool ShowAction { get; set; }
     }
 }
