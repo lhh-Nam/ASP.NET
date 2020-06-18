@@ -209,6 +209,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api\CoursesController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\FollowingsController.cs" />
@@ -242,6 +243,10 @@
     <Compile Include="Migrations\202006181820135_AddFollowingsTable.cs" />
     <Compile Include="Migrations\202006181820135_AddFollowingsTable.Designer.cs">
       <DependentUpon>202006181820135_AddFollowingsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006182007535_as.cs" />
+    <Compile Include="Migrations\202006182007535_as.Designer.cs">
+      <DependentUpon>202006182007535_as.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -351,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006181820135_AddFollowingsTable.resx">
       <DependentUpon>202006181820135_AddFollowingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006182007535_as.resx">
+      <DependentUpon>202006182007535_as.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

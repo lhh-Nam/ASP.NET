@@ -22,6 +22,7 @@ namespace NamASP.Controllers
             var upcomingCourses = _dbContext.Courses
                 .Include(c => c.Lecturer)
                 .Include(c => c.Category)
+                .Where(a => a.IsCanceled == false)
                 .Where(c => c.DateTime > DateTime.Now);
             var viewModel = new ViewModels.CoursesViewModel
             {
